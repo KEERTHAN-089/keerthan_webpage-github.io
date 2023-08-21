@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  /* Reset default margins and padding */
+  body, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the main menu */
+  ul.menu {
+    list-style-type: none;
+    background-color: #333;
+    display: flex;
+  }
+  
+  ul.menu li {
+    flex: 1;
+    text-align: center;
+  }
+  
+  ul.menu li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  ul.menu li:hover a {
+    background-color: #555;
+  }
+  
+  /* Style the submenu */
+  ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  ul.menu li:hover ul.submenu {
+    display: block;
+  }
+  
+  ul.submenu li {
+    width: 200px;
+    text-align: left;
+  }
+  
+  ul.submenu li a {
+    padding: 10px 15px;
+  }
+</style>
+<title>Menu with Submenu</title>
+</head>
+<body>
+  <ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li>
+      <a href="#">Services</a>
+      <ul class="submenu">
+        <li><a href="#">Web Design</a></li>
+        <li><a href="#">Graphic Design</a></li>
+        <li><a href="#">SEO</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</body>
+</html>
